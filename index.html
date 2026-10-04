@@ -138,7 +138,7 @@ footer{padding:45px 6vw;display:grid;grid-template-columns:1fr auto;gap:24px;bac
   <div class="gallery-grid"><img src="assets/museum-group.jpeg" alt="Museum group"><img src="assets/coach-group.jpeg" alt="Bus tour group"><img src="assets/clotilda-exhibition-couple.jpeg" alt="Clotilda exhibit visitors"><img src="assets/heritage-house-group.jpeg" alt="Africatown Heritage House group"></div>
 </section>
 
-<section class="contact-band" id="contact"><div><span class="eyebrow">QUESTIONS OR GROUP REQUESTS?</span><h2>We'd love to help plan your visit.</h2></div><div class="contact-actions"><a href="tel:+12515086807">251-508-6807</a><a href="mailto:info@africatownfreedomtour.com">info@africatownfreedomtour.com</a></div></section>
+<section class="contact-band" id="contact"><div><span class="eyebrow">QUESTIONS OR GROUP REQUESTS?</span><h2>We'd love to help plan your visit.</h2></div><div class="contact-actions"><a href="tel:+12515086807">251-508-6807</a><a href="mailto:xperienceafricatowntours@gmail.com">xperienceafricatowntours@gmail.com</a></div></section>
 </main>
 
 <footer><div><strong>Africatown Freedom Tours</strong><p>Experience history, heritage and community.</p></div><div><a href="#book">Book a Tour</a><a href="#experiences">Group Tours</a><a href="#stay">Hotel Accommodations</a><a href="https://www.blakeleypark.com/Things-to-Do/Events/AgentType/View/PropertyID/260" target="_blank" rel="noopener">Clotilda Boat Tours</a></div><p class="copyright">© <span id="year"></span> Africatown Freedom Tours. All rights reserved.</p></footer>
@@ -149,7 +149,7 @@ footer{padding:45px 6vw;display:grid;grid-template-columns:1fr auto;gap:24px;bac
 const guestInput=document.getElementById('guestCount'),bookingMessage=document.getElementById('bookingMessage'),demoBookButton=document.getElementById('demoBookButton');
 document.getElementById('year').textContent=new Date().getFullYear();
 function changeGuests(d){let n=Math.max(1,Math.min(26,Number(guestInput.value||1)+d));guestInput.value=n;checkGroupSize()}
-function checkGroupSize(){const n=Number(guestInput.value||1);if(n>25){bookingMessage.textContent='Groups over 25 must request a private/group booking by email.';demoBookButton.textContent='Email Group Tour Request';demoBookButton.onclick=()=>location.href='mailto:info@africatownfreedomtour.com?subject=Group%20Tour%20Request%20-%20Over%2025%20Guests'}else{bookingMessage.textContent=n===25?'This selection reaches the 25-guest public booking limit.':'';demoBookButton.textContent='Continue to Dates & Payment';demoBookButton.onclick=showBookeoNotice}}
+function checkGroupSize(){const n=Number(guestInput.value||1);if(n>25){bookingMessage.textContent='Groups over 25 must request a private/group booking by email.';demoBookButton.textContent='Email Group Tour Request';demoBookButton.onclick=()=>location.href='mailto:experienceafricatowntours@gmail.com?subject=Group%20Tour%20Request%20-%20Over%2025%20Guests'}else{bookingMessage.textContent=n===25?'This selection reaches the 25-guest public booking limit.':'';demoBookButton.textContent='Continue to Dates & Payment';demoBookButton.onclick=showBookeoNotice}}
 function showBookeoNotice(){document.getElementById('modal').classList.add('show')}function closeModal(){document.getElementById('modal').classList.remove('show')}checkGroupSize();
 </script>
 </body>
